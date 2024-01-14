@@ -1,0 +1,13 @@
+package Harry;
+
+public class ConvertToLowerCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "OO What's going on ...";
+		str = str.toLowerCase();
+		System.out.println(str);
+				
+	}
+
+}

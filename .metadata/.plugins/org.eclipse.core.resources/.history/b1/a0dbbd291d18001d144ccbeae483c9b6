@@ -1,0 +1,12 @@
+package harry;
+
+public class Vdo27_ForEachAndArray {
+
+	public static void main(String[] args) {
+		
+		int [] marks = {25,56,75,85,62};
+		
+
+	}
+
+}

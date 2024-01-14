@@ -1,0 +1,36 @@
+package sample;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class WindowAssignment extends FileInput{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\HP\\Documents\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+
+		driver.get("https://the-internet.herokuapp.com");
+		String keysOperation= Keys.chord(Keys.CONTROL,Keys.ENTER);
+		findElement("//a[text()='Multiple Windows']").sendKeys(keysOperation);
+		
+		String parentWindow = driver.getWindowHandle();
+		
+		while(itr.hasNext()) {
+			String childWindow = itr.next();
+			
+			if(childWindow.equals(parentWindow)) {
+				continue;
+			}
+			driver.switchTo().window(childWindow);
+			System.out.println(driver.getTitle());
+			
+			
+		}
+		driver.switchTo().window(parentWindow);
+		System.out.print(driver.getTitle());
+		
+	}
+
+}

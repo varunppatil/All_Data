@@ -1,0 +1,19 @@
+package practice;
+
+public class Vdo24 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int m = 23;
+		do {
+		
+			if (m==24) {
+				continue;
+			}
+			System.out.println(m);
+			m++;
+		}
+		while(m>26);
+	}
+
+}

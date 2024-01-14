@@ -1,0 +1,9 @@
+Feature: Add products to cart
+
+Scenario Outline:
+Given user is on landing page
+When user search for product with name <Product>
+
+Examples:
+| Product |
+|   Tom   |

@@ -1,0 +1,26 @@
+package rahulShetty;
+
+public class ExceptionDemo {
+
+		
+		int a = 4;
+		int b = 2;
+		int c = 0;
+		
+		int k = b/c;
+		
+		public void getData() {
+			System.out.println(k);
+		}
+		
+		public static void main(String[] args) {
+			
+		ExceptionDemo ed= new ExceptionDemo();
+		ed.getData();
+			
+		}
+		
+		
+		
+
+}

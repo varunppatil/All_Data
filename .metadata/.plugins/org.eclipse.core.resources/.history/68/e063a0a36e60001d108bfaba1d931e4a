@@ -1,0 +1,52 @@
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class SystemProperty {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = System.getProperty("user.dir")+ "\\varun.jpg";
+		String env=System.getProperty("user.dir")+ "\\prop.properties";
+		// Because getProperty returning path with "\" slash so for matching we need \\ as system doesnt consider \ slash.
+		System.out.println(env);
+		String mvnEnv=System.getProperty("environment");
+		System.out.println(mvnEnv);
+		String EnvironmentName;
+		
+	/*	public static Properties read (String path) {
+			Properties prop = new Properties();
+			InputStream input = new FileInputstream(path);
+			prop.load(prop);
+			return prop;
+		}
+	*/	
+	    //will check later getproperty
+	//	EnvironmentName=mvnEnv==null ? env.getProperty("browser").toLowerCase() : mvnEnv.toLowerCase();
+		EnvironmentName=mvnEnv==null ? env.toLowerCase() : mvnEnv.toLowerCase();
+		System.out.println(EnvironmentName);
+		System.out.println(System.getProperty("os.name"));
+	
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\Documents\\chromedriver.exe");
+		WebDriver driver = null;
+		
+	/*	ChromeOptions options =new ChromeOptions();
+		options.addArguments("--kiosk");
+		options.addArguments("disable-infobars");
+		options.addArguments("--disable-notifications");
+		options.addArguments("--disable-extensions");
+		options.setExperimentalOption("useAutomaticExtension", false);*/
+		driver = new ChromeDriver();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(12));
+		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(20));
+		
+		driver.manage().window().maximize();
+		driver.navigate().to("https://google.com");
+	
+	}
+
+}

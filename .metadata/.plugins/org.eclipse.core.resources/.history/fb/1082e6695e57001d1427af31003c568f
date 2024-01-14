@@ -1,0 +1,12 @@
+package harry;
+
+public class Vd054_EkClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Volcano v= new Volcano();
+		System.out.println(v.speedUp(3));
+		System.out.println(v.applyBrakes(4));
+	}
+
+}

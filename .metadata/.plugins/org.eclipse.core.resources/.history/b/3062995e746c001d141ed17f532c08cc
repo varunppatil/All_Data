@@ -1,0 +1,31 @@
+package sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
+
+public class RahulShetty {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\HP\\Documents\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
+		
+		try {
+			driver.get("http://rahulshettyacademy.com/AutomationPractice/");
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} 
+		//Assertion
+		Assert.assertThrows(null);
+		
+		//As per conditions
+		driver.findElement(By.id("q")).getAttribute("q").contains("1");
+		
+		
+		
+		
+}
+}

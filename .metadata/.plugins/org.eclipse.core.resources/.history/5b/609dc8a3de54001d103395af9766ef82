@@ -1,0 +1,29 @@
+package harry;
+
+class First {
+	public First() {
+		System.out.println("I am first class constructor");
+	}
+	public First(int a) {
+		System.out.println("I am constructor with value a "+a);
+	}
+	public void name() {
+		System.out.println("I am Varun Patil");
+	}
+}
+class Second extends First {
+	public Second() {
+		System.out.println("I am second constructor");
+	}
+	public Second(int b) {
+		System.out.println("I am second constructor with value b "+b);
+	}
+}
+public class Vdo47_ThisAndSuper {
+
+	public static void main(String[] args) {
+	Second sec = new Second(3);
+	sec.name();
+	
+	}
+}

@@ -1,0 +1,13 @@
+import java.util.Random;
+
+public class Vdo_19_rockPaperScissor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random r = new Random();
+		int ranNo = r.nextInt(2);
+		System.out.println(ranNo);
+		
+	}
+
+}

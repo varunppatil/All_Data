@@ -1,0 +1,16 @@
+package Harry;
+
+public class StringMethods {
+	
+	public static void main (String[] args) {
+		
+		String str= "BestBaggddaReBho";
+		
+		System.out.println(str.length());		
+		boolean b = str.equals("Baggdda");
+		System.out.println(b);
+		System.out.println(str.indexOf("st"));
+		
+	}
+
+}

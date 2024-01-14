@@ -1,0 +1,32 @@
+package rahulShetty;
+
+public class ExceptionDemo {
+
+		
+		
+		
+		public void getData() {
+			System.out.println(k);
+		}
+		
+		public static void main(String[] args) {
+			
+			try {
+				int a = 4;
+				int b = 2;
+				int c = 0;
+				
+				int k = b/c;
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		ExceptionDemo ed= new ExceptionDemo();
+		ed.getData();
+			
+		}
+		
+		
+		
+
+}

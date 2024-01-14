@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Vdo19PassOrFail {
+	public static void main(String[] args) {
+
+		System.out.println("Taking input of Threee Subjects : ");	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Taking First Subject Marks : ");
+		int a = sc.nextInt();
+		System.out.println("Taking Second Subject Marks : ");
+		int b = sc.nextInt();
+		System.out.println("Taking Three Subject Marks : ");
+		int c = sc.nextInt();
+	
+		//Assuming marks 
+		if (a >= 33 && b >= 33 && c >= 33) {
+			int d = (a+b+c);
+			//if ()
+		}
+		else
+			System.out.println("The Student is FAIL");
+	}
+
+}

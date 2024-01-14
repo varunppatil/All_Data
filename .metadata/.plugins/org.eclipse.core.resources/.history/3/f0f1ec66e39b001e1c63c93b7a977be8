@@ -1,0 +1,29 @@
+package rahulShetty;
+
+public class ExceptionDemo {
+
+		
+	
+		public static void main(String[] args) {
+			
+			try {
+				int a = 4;
+				int b = 2;
+				int c = 0;
+				
+				int k = b/c;
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				// use print only when you want to continue
+				
+				System.out.println("I Catched  Exceptions");
+			}
+		
+	
+			
+		}
+		
+		
+		
+
+}

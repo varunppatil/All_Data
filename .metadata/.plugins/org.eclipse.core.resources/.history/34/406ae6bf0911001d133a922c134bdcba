@@ -1,0 +1,36 @@
+package Harry;
+
+import java.util.Scanner;
+
+public class ConvertToLowerCase {
+
+	public static void main(String[] args) {
+		// Problem 2T
+		
+		/*String str = "OO What's going on ..."; str = str.toLowerCase();
+		  str = str.replaceAll(" ", "_"); 
+		  str = str.replaceFirst("_", "-"); // Successful I want a dash after oo ...great yaaar :) System.out.println(str);
+		 */
+		//Problem 3
+	/*	String str = "Dear <|name|>, Thanks  a lot";
+		str = str.replace("<|name|>", "Varun Patil");
+		System.out.println(str);
+		*/
+		
+		//Problem 4
+		Scanner sc = new Scanner (System.in);
+		String str= sc.nextLine();
+		System.out.println(str);
+		
+		if (str.contains("   ")) {
+			System.out.println("String contains 3 spaces ");
+		}
+		else if ( str.contains("  ")) {
+			System.out.println("String contains 2 spaces ");
+		}
+		else
+			System.out.println("Don't have 2 or 3 spaces");
+				
+	}
+
+}

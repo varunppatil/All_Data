@@ -1,0 +1,13 @@
+package Harry;
+
+public class StringMethods {
+	
+	public static void main (String[] args) {
+		
+		String str= "BestBaggddaReBho";
+		
+		System.out.println(str.length());
+		
+	}
+
+}

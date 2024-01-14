@@ -1,0 +1,31 @@
+package sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class FrameandWindow {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\HP\\Documents\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+
+		driver.get("https://amazon.com");
+		Actions action = new Actions(driver);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		By dismiss = By.xpath("//input[@data-action-type='DISMISS']");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(dismiss));
+		driver.findElement(dismiss).click();
+		driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("VarunPatil");
+		WebElement elementToMouseOver = driver.findElement(By.id("nav-link-accountList"));
+		action.moveToElement(elementToMouseOver).build().perform();
+
+	}
+
+}

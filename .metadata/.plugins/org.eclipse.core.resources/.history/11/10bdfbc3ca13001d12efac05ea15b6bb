@@ -1,0 +1,23 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Vdo_19_rockPaperScissor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		My input ...
+		System.out.println("Takinf my input : ");
+		Scanner sc = new Scanner(System.in);
+		int myGesture =sc.nextInt();
+		
+		Random r = new Random();
+		int compGeture = r.nextInt(3);
+		System.out.println(compGeture);
+		
+
+
+		
+		
+	}
+
+}

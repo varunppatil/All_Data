@@ -1,0 +1,34 @@
+package harry;
+
+class A {
+	public void v1() {
+		System.out.println("I am v1 method in class A");
+	}
+	public void method2() {
+		System.out.println("I am method 2 in class A");
+	}
+}
+class B extends A{
+	@Override
+	public void v1() {
+		int a=20;
+		System.out.println("I am v1 method in class B "+a);
+	}
+	@Override
+	public void method2() {
+		int b=30;
+		System.out.println("I am method 2 in class B "+b);
+	}
+}
+
+
+public class Vdo48_Overrriding {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B b=new B();
+		b.method2();
+		b.v1();
+	}
+
+}

@@ -1,0 +1,14 @@
+package utils;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestBase {
+	
+	public void WebDriverManager()
+	 {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Documents\\chromedriver.exe");
+		testContextSetup.driver = new ChromeDriver();
+		testContextSetup.driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+
+		}
+}

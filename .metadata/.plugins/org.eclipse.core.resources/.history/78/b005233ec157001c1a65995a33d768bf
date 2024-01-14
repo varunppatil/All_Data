@@ -1,0 +1,22 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test2 {
+	
+	
+	public static void main(String[] args) {
+		
+		//Set name and path for driver for specific webdriver
+		//execute webdriver with proper class name
+		//excee or execute the link address
+		//perform whatever you want
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Documents\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://gmail.com");
+		System.out.println(driver.getTitle());
+		
+		
+	}
+
+}

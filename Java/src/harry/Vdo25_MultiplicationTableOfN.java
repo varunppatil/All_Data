@@ -1,0 +1,27 @@
+package harry;
+
+import java.util.Scanner;
+
+public class Vdo25_MultiplicationTableOfN {
+
+	public static void main(String[] args) {
+		System.out.println("Table of : ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		// Proper Table
+/*		for (int i=1;i<=10;i++) {
+			System.out.println(n+"*"+i+"="+n*i);
+		}
+*/
+		int sum = 0;
+		// Reverse Table
+		for(int i=10;i>=1;i--) {
+		//	System.out.println(n+"*"+i+"="+n*i); /
+			System.out.printf("%d * %d = %d \n",n,i,n*i);// Using printf
+			sum = sum + n*i;
+		}
+		System.out.println(sum);
+	}
+
+}

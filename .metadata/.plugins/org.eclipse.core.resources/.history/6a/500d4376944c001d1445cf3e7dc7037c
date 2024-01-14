@@ -1,0 +1,44 @@
+package harry;
+
+
+
+	
+	class Employee1{
+		int salary;
+		String name ;
+		
+		
+		
+		
+		int getSalary(int salary){
+			System.out.println("The salary of employee is: " +salary);
+			return salary;
+		}
+		
+		String getName(String name) {
+			System.out.println("The name is :" +name);
+			return name;
+		}
+		String setName(String name) {
+			this.name = name;
+			return name;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	public class Vd040_ClassEmployee {
+	
+	
+	public static void main(String[] args) {
+	Employee1 employee = new Employee1();
+	employee.getSalary(40000);
+	employee.getName("Yash");
+	System.out.println(employee.setName("Varun"));
+	System.out.println(employee.name);
+	}
+
+}

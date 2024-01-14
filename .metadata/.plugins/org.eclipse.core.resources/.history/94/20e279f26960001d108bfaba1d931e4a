@@ -1,0 +1,27 @@
+import java.util.Properties;
+
+public class SystemProperty {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = System.getProperty("user.dir")+ "\\varun.jpg";
+		String env=System.getProperty("user.dir")+ "\\prop.properties";
+		// Because getProperty returning path with "\" slash so for matching we need \\ as system doesnt consider \ slash.
+		System.out.println(env);
+		String mvnEnv=System.getProperty("environment");
+		System.out.println(mvnEnv);
+		String EnvironmentName;
+		
+	/*	public static Properties read (String path) {
+			Properties prop = new Properties();
+			InputStream input = new FileInputstream(path);
+			prop.load(prop);
+			return prop;
+		}
+	*/	
+	    //will check later getproperty
+		EnvironmentName=mvnEnv==null ? env.getProperty("browser").toLowerCase() : mvnEnv.toLowerCase();
+		System.out.println(EnvironmentName);
+	}
+
+}

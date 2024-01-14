@@ -1,0 +1,22 @@
+package harry;
+
+   interface Vdo54_Interface {
+	   int a=3;
+	   int speedUp(int a);
+	   int applyBrakes(int b);
+}
+   class Volcano implements Vdo54_Interface{
+	   int speed =10;
+	   public int speedUp(int a) {
+		   speed = speed-a; 
+		   return speed;
+	   }
+	   public int applyBrakes(int b) {
+		   speed = speed-b;
+		   return speed;
+	   }
+   }
+   
+   
+
+

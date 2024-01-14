@@ -1,0 +1,33 @@
+package code;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.mysql.jdbc.Driver;
+
+
+
+
+public class DataBase {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+		
+	//	url should belike
+		// "jdbc:mysql://"+host+":"+port+"/databasename";
+		//"jdbc:mysql://localhost:3306/sys
+		
+		String host ="localhost";
+		String port ="3306";
+		
+		
+	Connection conn =	DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/sys", "root", "Varun@243");
+	Statement a = conn.createStatement();
+	a.executeQuery ("select * from sys");
+		
+		
+	}
+
+}

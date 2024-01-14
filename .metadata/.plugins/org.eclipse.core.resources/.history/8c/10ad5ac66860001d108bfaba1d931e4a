@@ -1,0 +1,18 @@
+
+
+public class SystemProperty {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = System.getProperty("user.dir")+ "\\varun.jpg";
+		String env=System.getProperty("user.dir")+ "\\prop.properties";
+		// Because getProperty returning path with "\" slash so for matching we need \\ as system doesnt consider \ slash.
+		System.out.println(env);
+		String mvnEnv=System.getProperty("environment");
+		System.out.println(mvnEnv);
+		String EnvironmentName;
+		
+		//EnvironmentName=mvnEnv==null ? env
+	}
+
+}

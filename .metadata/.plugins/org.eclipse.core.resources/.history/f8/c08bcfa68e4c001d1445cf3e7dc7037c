@@ -1,0 +1,45 @@
+package harry;
+
+class Employee{
+	public int id ;
+	public String name ;
+	//public int noOfGadgets;
+	public Employee(int id, String name) {
+		this.id  = id;
+		this.name = name ;
+		//System.out.println("Gadgets are : " +  noOfGadgets);
+	}
+	
+	
+	public void details() {
+	System.out.println("The id is: " + id);
+	System.out.println("The name of employee is: " + name);
+	}
+}
+	
+public class Vdo38_OwnJavaClass {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("This is custom class: ");
+		Employee varun = new Employee(2,Varun);
+		//varun.id = 12;
+		//varun.name = "Varun";
+		varun.details();
+		
+		Employee yash = new Employee(4,yash);
+		//yash.id = 25;
+		//yash.name ="Yash";
+		
+		yash.details();
+		
+		Employee emp = new Employee(4);
+		
+	}
+}
+	
+	
+	
+

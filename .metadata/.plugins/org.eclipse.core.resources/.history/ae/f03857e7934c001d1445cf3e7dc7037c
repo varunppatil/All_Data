@@ -1,0 +1,32 @@
+package harry;
+
+
+
+	
+	class Employee1{
+		int salary;
+		
+		
+		
+		
+		int getSalary(int salary){
+			System.out.println("The salary of employee is: " +salary);
+			return salary;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	public class Vd040_ClassEmployee {
+	
+	
+	public static void main(String[] args) {
+	Employee1 salary = new Employee1();
+	salary.getSalary(40000);
+	
+	}
+
+}
