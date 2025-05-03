@@ -6,13 +6,13 @@ public class Vdo34_RecursionInJava {
 
 	// Experimenting method overloading in Recursion classs ... :)
 	
-	static int fibonacci(int n ) {
+	static int factorial(int n ) {
 		
 		if(n==0 || n==1) {
 		 return 1;
 		}
 		else {
-			return n* fibonacci(n-1);
+			return n* factorial(n-1);
 		}
 	}
 	
@@ -22,17 +22,17 @@ public class Vdo34_RecursionInJava {
 	
 	  Scanner sc = new Scanner(System.in); System.out.println("Take to a no: ");
 	  int no = sc.nextInt(); 
-	 System.out.println(fibonacci(no)); 
-	 System.out.println(fibonacci()); 
+	 System.out.println(factorial(no)); 
+	 System.out.println(factorial()); 
 	  }
 	 
-	static int fibonacci() {
+	static int factorial() {
 		int n=0;
 		if(n==0 || n==1) {
 		return 1;
 		}
 		else {
-			return n* fibonacci(n-1);
+			return n* factorial(n-1);
 		}
 	}
 

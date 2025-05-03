@@ -10,12 +10,23 @@ public class Vdo25_StarPattern {
 		byte b =sc.nextByte();
 		
 		for (int i=1;i<=b;i++) {
-			for(int j=i;j<=b;j++) {
+			for(int j=1;j<=i;j++) {
 				System.out.print("*");
 			}
 			System.out.println("");
 		}
 		
+		//*
+		//**
+		//***
+		
+		
+		for (int i=1;i<=b;i++) {
+			for(int j=i;j<=b;j++) {   
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
 
 	}
 

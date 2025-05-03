@@ -32,7 +32,7 @@ public class ChildWindow {
 				driver.switchTo().window(childWindow);
 				WebElement text= driver.findElement(By.id("sampleHeading"));
 				System.out.println("Heading of child window...." +text.getText());
-				//driver.quit();
+				driver.quit();
 				}
 		}
     

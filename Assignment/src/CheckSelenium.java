@@ -1,17 +1,22 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CheckSelenium {
 
 	public static void main(String[] args) throws InterruptedException {
 		
 		
-	System.setProperty("webdriver.chrome.driver", "C://Users//HP/Documents//chromedriver.exe");
+	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\eclipse-workspace\\Assignment\\target\\chrome\\chromedriver.exe");
+	
+	//WebDriverManager.edgedriver().setup();
 	WebDriver driver=new ChromeDriver();
 	
-	
 	driver.manage().window().maximize();
-	driver.get("http:/google.com");
+	driver.get("https://www.google.com/");
 	
 	//System.out.println(driver.getTitle());
 	
@@ -31,5 +36,7 @@ public class CheckSelenium {
 	driver.quit();
 	
 	}
+	
+
 
 }

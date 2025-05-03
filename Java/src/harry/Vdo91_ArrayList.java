@@ -18,7 +18,7 @@ public class Vdo91_ArrayList {
 		a1.add(6);
 		a1.add(7);
 		a1.add(8);
-		a1.add(3,0);
+		a1.add(3,3);
 		a1.addAll(0,a2);
 		Iterator<Integer> i = a1.iterator();
 		System.out.println(i.hasNext());
@@ -27,22 +27,29 @@ public class Vdo91_ArrayList {
 			//System.out.println(a1);
 			System.out.println(a1.contains(56));
 		}
-		System.out.println(a1.indexOf(4));
+		System.out.println(a1.indexOf(56));
 		System.out.println(a2.indexOf(100));// Not present then it will return -1.
-		
+		System.out.println(a2.set(0,100));
+		System.out.println(a2);
+		System.out.println(a1.indexOf(3));
+		System.out.println(a1.lastIndexOf(3));
 	// ArrayList<Integer> a3 = new ArrayList<>();
 		Object[] arr1=a1.toArray();
 		
 		for(Object i1:arr1) {
 			System.out.print(i1+",");
 		}
+		arr1[0]=1;
+		System.out.println(Arrays.toString(arr1));
 	}
 	LinkedList<Integer> g=new LinkedList<>();
 	
 
 	private static void forEach(ArrayList<Integer> a1) {
 		// TODO Auto-generated method stub
-		
+		for (Integer a:a1) {
+			System.out.print(a+" , ");
+		}
 	}
 
 

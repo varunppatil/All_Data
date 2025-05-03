@@ -1,131 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="12" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-01T12:22:53 IST" name="Suite" finished-at="2022-12-01T12:22:53 IST" duration-ms="71">
+  <suite started-at="2024-12-21T16:13:00 IST" name="Default suite" finished-at="2024-12-21T16:13:00 IST" duration-ms="59">
     <groups>
-      <group name="sanity">
-        <method signature="Day1.Varun()[pri:0, instance:Test.Day1@1ea9f6af]" name="Varun" class="Test.Day1"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-12-01T12:22:53 IST" name="Car Loan" finished-at="2022-12-01T12:22:53 IST" duration-ms="67">
-      <class name="Test.Day2">
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="AfterSuite" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterSuite -->
-      </class> <!-- Test.Day2 -->
-      <class name="Test.Day3">
-        <test-method signature="MobileLoginHomeLoan()[pri:0, instance:Test.Day3@4c371370]" started-at="2022-12-01T12:22:53 IST" name="MobileLoginHomeLoan" finished-at="2022-12-01T12:22:53 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileLoginHomeLoan -->
-        <test-method signature="WebLoginHome()[pri:0, instance:Test.Day3@4c371370]" started-at="2022-12-01T12:22:53 IST" name="WebLoginHome" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebLoginHome -->
-        <test-method signature="LoginAPIHomeLoan()[pri:0, instance:Test.Day3@4c371370]" started-at="2022-12-01T12:22:53 IST" name="LoginAPIHomeLoan" finished-at="2022-12-01T12:22:53 IST" depends-on-methods="Test.Day3.MobileLoginHomeLoan, Test.Day3.WebLoginHome" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAPIHomeLoan -->
-      </class> <!-- Test.Day3 -->
+    <test started-at="2024-12-21T16:13:00 IST" name="Default test" finished-at="2024-12-21T16:13:00 IST" duration-ms="59">
       <class name="Test.Day4">
-        <test-method signature="SomeData()[pri:0, instance:Test.Day4@313ac989]" started-at="2022-12-01T12:22:53 IST" name="SomeData" finished-at="2022-12-01T12:22:53 IST" duration-ms="8" status="PASS">
+        <test-method signature="SomeData()[pri:0, instance:Test.Day4@c33b74f]" started-at="2024-12-21T16:13:00 IST" name="SomeData" finished-at="2024-12-21T16:13:00 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SomeData -->
-        <test-method signature="SomeTest()[pri:0, instance:Test.Day4@313ac989]" started-at="2022-12-01T12:22:53 IST" name="SomeTest" finished-at="2022-12-01T12:22:53 IST" duration-ms="3" status="PASS">
+        <test-method signature="SomeTest()[pri:0, instance:Test.Day4@c33b74f]" started-at="2024-12-21T16:13:00 IST" name="SomeTest" finished-at="2024-12-21T16:13:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SomeTest -->
-        <test-method signature="SomeThing(java.lang.String)[pri:0, instance:Test.Day4@313ac989]" started-at="2022-12-01T12:22:53 IST" name="SomeThing" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://google.com]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="SomeThing(java.lang.String)[pri:0, instance:Test.Day4@c33b74f]" started-at="2024-12-21T16:13:00 IST" name="SomeThing" finished-at="2024-12-21T16:13:00 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method SomeThing but has not been marked @Optional or defined
+in C:\Users\HP\AppData\Local\Temp\testng-eclipse-2067633175\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method SomeThing but has not been marked @Optional or defined
+in C:\Users\HP\AppData\Local\Temp\testng-eclipse-2067633175\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SomeThing -->
+        <test-method signature="ThingSomeReverse()[pri:0, instance:Test.Day4@c33b74f]" started-at="2024-12-21T16:13:00 IST" name="ThingSomeReverse" finished-at="2024-12-21T16:13:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThingSomeReverse -->
+        <test-method signature="needdata(java.lang.String,java.lang.String)[pri:0, instance:Test.Day4@c33b74f]" started-at="2024-12-21T16:13:00 IST" name="needdata" data-provider="getData" finished-at="2024-12-21T16:13:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[first]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwdfirst]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- needdata -->
+        <test-method signature="needdata(java.lang.String,java.lang.String)[pri:0, instance:Test.Day4@c33b74f]" started-at="2024-12-21T16:13:00 IST" name="needdata" data-provider="getData" finished-at="2024-12-21T16:13:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Second]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Secondpwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- needdata -->
+        <test-method signature="needdata(java.lang.String,java.lang.String)[pri:0, instance:Test.Day4@c33b74f]" started-at="2024-12-21T16:13:00 IST" name="needdata" data-provider="getData" finished-at="2024-12-21T16:13:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Third]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwdThird]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- needdata -->
       </class> <!-- Test.Day4 -->
-    </test> <!-- Car Loan -->
-    <test started-at="2022-12-01T12:22:53 IST" name="MyTests" finished-at="2022-12-01T12:22:53 IST" duration-ms="71">
-      <class name="Test.Day2">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="prerequisite" finished-at="2022-12-01T12:22:53 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prerequisite -->
-        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="BeforeTest" finished-at="2022-12-01T12:22:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="beforeMethod" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="beforeMethod" finished-at="2022-12-01T12:22:53 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://google.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Day2()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="Day2" finished-at="2022-12-01T12:22:53 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Day2 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="afterMethod" finished-at="2022-12-01T12:22:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="beforeMethod" finished-at="2022-12-01T12:22:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="beforeMethod" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://google.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Day1()[pri:1, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="Day1" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Day1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="afterMethod" finished-at="2022-12-01T12:22:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="AfterClass()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="AfterClass" finished-at="2022-12-01T12:22:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterClass -->
-        <test-method is-config="true" signature="AfterTest()[pri:0, instance:Test.Day2@6379eb]" started-at="2022-12-01T12:22:53 IST" name="AfterTest" finished-at="2022-12-01T12:22:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- Test.Day2 -->
-      <class name="Test.Day1">
-        <test-method signature="Demo()[pri:0, instance:Test.Day1@1ea9f6af]" started-at="2022-12-01T12:22:53 IST" name="Demo" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Demo -->
-        <test-method signature="Varun()[pri:0, instance:Test.Day1@1ea9f6af]" started-at="2022-12-01T12:22:53 IST" name="Varun" finished-at="2022-12-01T12:22:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Varun -->
-      </class> <!-- Test.Day1 -->
-    </test> <!-- MyTests -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

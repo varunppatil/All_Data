@@ -1,16 +1,25 @@
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Alert_S  {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\Documents\\chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\Documents\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
+		 ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--remote-allow-origins=*"); // Fix for WebSocket connection error
+	        options.addArguments("--disable-gpu"); // Optional, improves stability in some environments
+	        options.addArguments("--disable-dev-shm-usage"); // Prevents memory issues in Docker/CI
+
+	        driver = new ChromeDriver(options);
+	        driver.manage().window().maximize();
+	        
 		
 		String url="https://chercher.tech/practice/practice-pop-ups-selenium-webdriver";
 		driver.get(url);

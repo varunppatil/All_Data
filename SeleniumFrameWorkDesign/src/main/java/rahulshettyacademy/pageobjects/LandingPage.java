@@ -38,6 +38,8 @@ public class LandingPage extends AbstractComponents {
 	userEmail.sendKeys(email);
 	userPassword.sendKeys(pass);
 	submit.click();
+//	By xpath = By.xpath(pass);
+//	enterText(xpath , "1234");
 	
 	}
 	

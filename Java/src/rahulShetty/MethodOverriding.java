@@ -6,7 +6,7 @@ public class MethodOverriding {
 		// TODO Auto-generated method stub
 
 	}
-	
+	//This is overloading - not overriding
 	public void check(String str) {
 		
 	}

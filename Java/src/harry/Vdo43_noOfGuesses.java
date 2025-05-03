@@ -34,7 +34,7 @@ class Guess{
 	
 	public void isCorrectNo() {
 		if(randNo==userNo) {
-			System.out.println("No detected by userr is correct " + userNo);
+			System.out.println("Number detected by user is correct " + userNo);
 			count++;
 		}
 		else if (randNo > userNo) {

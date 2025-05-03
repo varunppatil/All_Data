@@ -1,7 +1,9 @@
-
-
- abstract class Bike {
-	 abstract void run() ;
+abstract class Bike {
+	 abstract void run();
+	 
+	 public void newMeth() {
+		 System.out.println("Coding");
+	 }
 }
  
  class Hero extends Bike {

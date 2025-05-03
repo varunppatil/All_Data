@@ -5,23 +5,37 @@ import java.util.Scanner;
 public class ConvertToLowerCase {
 
 	public static void main(String[] args) {
+		
+		//Checking replace aeiouAEIOU
+		
+		String newString = "VarunPatilPIMpalae424";
+		
+//		String replaceString = newString.replaceAll("^[0-9]$","");
+		String replaceString = newString.replaceAll("[0-9]","");
+		
+		System.out.println(replaceString);
+		
+		
+		
+		
 		// Problem 2T
 		
-		/*String str = "OO What's going on ..."; str = str.toLowerCase();
+		String str = "OO What's going on ..."; str = str.toLowerCase();
 		  str = str.replaceAll(" ", "_"); 
 		  str = str.replaceFirst("_", "-"); // Successful I want a dash after oo ...great yaaar :) System.out.println(str);
-		 */
+		 System.out.println(str);
 		//Problem 3
-	/*	String str = "Dear <|name|>, Thanks  a lot";
-		str = str.replace("<|name|>", "Varun Patil");
-		System.out.println(str);
-		*/
+		String str3 = "Dear <|name|>, Thanks  a lot";
+		//String str22 = str3.replace("<|name|>", "Varun Patil");//will it
+		String str22 = str3.replaceAll("<|name|>", "Varun Patil"); //will replace < | name | > , all 3 will be replaced with Varun Patil
+		System.out.println(str22);
+		
 		
 		//Problem 4
 		System.out.println("Taking a input");
 		Scanner sc = new Scanner (System.in);
-		String str= sc.nextLine();
-		System.out.println(str);
+		String str1= sc.nextLine();
+		System.out.println(str1);
 		
 		if (str.contains("   ")) {
 			System.out.println("String contains 3 spaces and 2 spaces");

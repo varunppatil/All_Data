@@ -17,7 +17,7 @@ public class ContextClick {
 		
 		Actions action = new Actions(driver);
 		WebElement element= driver.findElement(By.xpath("//span[contains(text(),'right click me')]"));
-		
+		//Action
 		action.contextClick(element).build().perform();
 		
 		driver.findElement(By.xpath("//body/ul/li[1]")).click();

@@ -2,14 +2,14 @@ package harry;
 
 public class Vdo33_VariableArgument {
 
-	static int sum(int x,int ...arr) {
+	static int sum(int x,int... arr) {
 		int result = x;
 		for(int a:arr) {
 			result +=a;
 		}
 		return result;
 	}
-	static int sum1(int ...arr) {
+	static int sum1(int... arr) {
 		int result = 0;
 		for(int a:arr) {
 			result +=a;

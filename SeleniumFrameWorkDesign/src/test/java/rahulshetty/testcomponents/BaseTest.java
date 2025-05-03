@@ -2,7 +2,6 @@ package rahulshetty.testcomponents;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -11,13 +10,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
@@ -34,8 +30,14 @@ public class BaseTest {
 		switch(browserName){
 	    case "chrome":
 	    	System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\HP\\\\Documents\\\\chromedriver.exe");	
-		driver = new ChromeDriver();		
-		driver.manage().window().maximize();			
+	    	 ChromeOptions options = new ChromeOptions();
+	         options.addArguments("--remote-allow-origins=*"); // Fix for WebSocket connection error
+	         options.addArguments("--disable-gpu"); // Optional, improves stability in some environments
+	         options.addArguments("--disable-dev-shm-usage"); // Prevents memory issues in Docker/CI
+
+	         driver = new ChromeDriver(options);
+	         driver.manage().window().maximize();
+	        		
 		break;
 		
 	    case "edge":		

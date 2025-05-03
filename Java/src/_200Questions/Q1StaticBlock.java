@@ -10,7 +10,7 @@ public class Q1StaticBlock {
 	
 	Q1StaticBlock(String str) {
 		
-		System.out.println("Inside the constructor of the class.");
+		System.out.println("Inside the constructor of the class.111");
 	}
 
 // print method of the StaticBlock class  
@@ -20,6 +20,9 @@ public class Q1StaticBlock {
 
 	static {
 		System.out.println("Inside the static block.");
+	}
+	{
+		System.out.println("Initializer");
 	}
 
 // main method  

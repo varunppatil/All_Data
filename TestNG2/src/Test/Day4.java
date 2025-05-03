@@ -35,9 +35,9 @@ public class Day4 {
 	}
 	//@DataProvider(name="needdata")
 	@DataProvider
-	public String[][] getData() {
+	public Object[][] getData() {
 		
-		String[][] data= {{"first","pwdfirst"},{"Second","Secondpwd"},{"Third","pwdThird"}};
+		Object[][] data= {{"first","pwdfirst"},{"Second","Secondpwd"},{"Third","pwdThird"}};
 		
 		return data;
 		

@@ -11,12 +11,12 @@ public class PracticeChar {
 	 System.out.println((int)ch);
 	 char ch2 = 'Z';
 	 System.out.println((int)ch2);
-	 char ch3 ='7';
+	 int ch3 =71;
 	 char ch4 = 'A';
 	 System.out.println(ch4); 
 	 int a = (int)ch4;
 	 System.out.println(a);
-	 
+	 System.out.println((char)ch3);
 	 String s="varun.xls";
 	 System.out.println(s.substring(5));
 	}

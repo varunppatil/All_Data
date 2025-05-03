@@ -1,9 +1,35 @@
 
 public class VowelsInString {
+	
+	
+public static void checkVowels(String str) {
+	
+	String str1 = str;
+	String vowels="aeiouAEIOU";
+	
+	char [] charArray = str1.toCharArray();
+	int count =0;
+	for(int i=0;i<charArray.length;i++) {
+		
+		//Character.toString(ch);
+		//Character.valueOf(ch)
+		//ch+ ""
+		
+		if(vowels.contains(Character.toString(charArray[i]))) {
+			count ++;
+			System.out.println(charArray[i] +" times "+ count);
+			
+		}
+	}
+}
+	
+
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "Welcome";
+/*		String str = "Welcome";
 		int count = 0;
 		for(int i = 0; i< str.length(); i++) {
 				
@@ -15,6 +41,7 @@ public class VowelsInString {
 		}
 		   
 		}
-		 System.out.println("No of vowels present in string are : " + count);
+		 System.out.println("No of vowels present in string are : " + count); */
+		 checkVowels("Varun");
 	}
 }

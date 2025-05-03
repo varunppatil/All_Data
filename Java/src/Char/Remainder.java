@@ -9,6 +9,9 @@ public class Remainder {
 			System.out.println(i%10);
 			i=i/10;
 			
+			//For System.out.println implemented
+			int b = Charcode.returnObject().a;
+			System.out.println(b);
 		}
 	}
 

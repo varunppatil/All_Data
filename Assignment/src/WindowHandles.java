@@ -32,6 +32,7 @@ public class WindowHandles {
 			//	WebElement newElement=driver.findElement(By.id("sampleHeading"));
 				//System.out.println("The text of window is..."+newElement.getText());
 				System.out.println(allWindows);
+				
 			}
 		}
 		

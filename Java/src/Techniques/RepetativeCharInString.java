@@ -7,7 +7,7 @@ public class RepetativeCharInString {
 		String str = "Varun Patil";
 		
 		char [] charArray = str.toCharArray();
-		int count =0;
+		int count =1;
 		for(int i =0 ; i<str.length();i++) {
 			for(int j=i+1; j<str.length();j++) {
 				if(charArray[i] == charArray[j]) {

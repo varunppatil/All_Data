@@ -21,6 +21,6 @@ public class practice {
 	        Collections.reverse(trial1);
 	        Iterator li = trial1.iterator();
 	        while (li.hasNext())
-	            System.out.print(li.next());
+	            System.out.print(""+li.next());
 	    }
 	}

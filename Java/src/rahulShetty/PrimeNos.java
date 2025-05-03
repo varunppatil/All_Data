@@ -16,7 +16,7 @@ public class PrimeNos {
 				continue;
 			}
 			
-		for(int j=2;j<i;j++) {
+		for(int j=2;j<(int)Math.sqrt(number);j++) {
 				if(i%j==0) {
 					condition++;
 					break;

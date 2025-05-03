@@ -14,6 +14,8 @@ import rahulshettyacademy.pageobjects.OrderPage;
 public class AbstractComponents {
 
 	WebDriver driver;
+	
+	public static int low=2000;
 
 	public AbstractComponents(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -26,7 +28,12 @@ public class AbstractComponents {
 
 	}
 	
-	@FindBy(xpath="(//button[@class='btn btn-custom'])[2]")
+	public void enterText(By xpath, String str) {
+		
+		driver.findElement(xpath).sendKeys(str);
+	}
+	
+	@FindBy(xpath="(//button[contains(@class, 'tn btn-custom')])[2]")
 	WebElement orderHeader;
 	
 	public OrderPage goToOrdersPage() {

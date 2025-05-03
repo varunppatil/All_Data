@@ -8,6 +8,7 @@
           <include name="tearDown"/>
           <include name="launchApplication"/>
           <include name="submitOrder"/>
+          <include name="orderHistory"/>
         </methods>
       </class> <!-- frameworkrahulsheety.SubmitOrderTest -->
     </classes>
