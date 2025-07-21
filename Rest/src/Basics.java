@@ -20,7 +20,7 @@ public class Basics {
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")
 		.body(Payload.addPlace()).
-		when().post("maps/api/place/add/json")
+		when().post("maps/api/place/add/json") 
 		.then()
 		.log().all().
 		assertThat().statusCode(200).body("scope", equalTo("APP"))
