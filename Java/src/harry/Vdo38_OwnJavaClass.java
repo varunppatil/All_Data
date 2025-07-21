@@ -10,6 +10,10 @@ class Employee{
 		//System.out.println("Gadgets are : " +  noOfGadgets);
 	}
 	
+	public Employee() {
+		
+		System.out.println("Employee constructor");
+	}
 	
 	public void details() {
 	System.out.println("The id is: " + id);

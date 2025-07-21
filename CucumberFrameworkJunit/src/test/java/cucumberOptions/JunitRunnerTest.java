@@ -1,9 +1,8 @@
 package cucumberOptions;
 
 import org.junit.runner.RunWith;
-
-
-
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
@@ -11,7 +10,5 @@ import org.junit.runner.RunWith;
 , monochrome=true,tags="@OffersPage", plugin= {"pretty", "html:target/cucumber.html","json:target/cucumber.json"})
 public class JunitRunnerTest {
 	
-	
-
-	
+		
 }

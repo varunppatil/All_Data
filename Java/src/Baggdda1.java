@@ -1,15 +1,17 @@
-
+import java.util.Scanner;
 
 public class Baggdda1 {
 
 	public static void main(String[] args) {
 	
-		int i=63;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number ");
+		int i = sc.nextInt();
 		if(i%2==0) {
-			System.out.println("The no is even");
+			System.out.println(i+" The no is even");
 		}
 		else {
-			System.out.println("The no is odd");
+			System.out.println(i+" The no is odd");
 		}
 }
 }

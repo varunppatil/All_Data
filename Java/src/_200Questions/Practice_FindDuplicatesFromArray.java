@@ -17,9 +17,14 @@ public class Practice_FindDuplicatesFromArray {
 					} else
 						hm.put(str[i], 1);
 		}
+		int count =1;
 		for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
 
-			System.out.println(entry.getKey() + " " +"value present "+ entry.getValue()+" times");
+			if(entry.getValue()>count) {
+				//count = entry.getValue();
+				System.out.println(entry.getKey() + " " +"value present "+ entry.getValue()+" times");
+			}
+			//count =1;
 		}
 	}
 

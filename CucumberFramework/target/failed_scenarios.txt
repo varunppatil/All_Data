@@ -1,2 +1,2 @@
-file:src/test/java/features/Checkout.feature:14
+file:src/test/java/features/Checkout.feature:15:16
 file:src/test/java/features/SearchProduct.feature:13:14

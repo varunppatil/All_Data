@@ -12,8 +12,6 @@ public class ReverseWithStringBuffer {
 			bd2.append(" "+bd);
 		}
 		System.out.println(bd2.toString().trim());
-		//bd2.setCharAt(0, 'N');
-		//System.out.println(bd2.toString().trim());
 		StringBuffer sb = new StringBuffer("Varun Premnath Patil");
 		for (int i=0;i<sb.length();i++) {
 			char ch =sb.charAt(i) ;
@@ -24,9 +22,6 @@ public class ReverseWithStringBuffer {
 				sb.setCharAt(i, Character.toUpperCase(ch));
 		}
 		System.out.println(sb.toString());
-		
-		
-		
 	}
 	
 	

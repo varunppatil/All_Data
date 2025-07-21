@@ -26,6 +26,7 @@ class Some implements Phone, WiFi{
 		String [] str33 = {"Sam@1234", "Rock", "peter"};
 		return str33;
 	}
+	
 	public boolean WifiStatus() {
 		return true;
 	}

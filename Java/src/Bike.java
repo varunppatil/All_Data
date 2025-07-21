@@ -10,6 +10,10 @@ abstract class Bike {
 	 void run() {
 		 System.out.println("Something we added ");
 	 }
+	 
+	 public void newMeth() {
+		 System.out.print("a");
+	}
 	
 	 public static void main(String[] args) {
 	 Bike bk = new Hero ();

@@ -17,11 +17,11 @@ public class SortOnlyLast3Numbers {
 		int temp=0;
 		//int min =arr[arr.length-lastNumbersToSort];
 		for (int i=arr.length-lastNumbersToSort;i<arr.length;i++) {
-			for (int j=i+1;j<arr.length;j++) {
-			if(arr[i]>arr[j]) {
+			for (int j=arr.length-lastNumbersToSort;j<arr.length-1;j++) {
+			if(arr[j]>arr[j+1]) {
 				temp=arr[j];
-				arr[j]=arr[i];
-				arr[i] = temp;
+				arr[j]=arr[j+1];
+				arr[j+1] = temp;
 			}
 			}
 		}

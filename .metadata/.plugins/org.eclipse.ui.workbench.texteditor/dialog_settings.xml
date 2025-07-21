@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="finally"/>
+		<item key="selection" value="System.out"/>
 		<list key="findhistory">
+			<item value="System.out"/>
+			<item value="ZonedDateTime"/>
+			<item value="a "/>
 			<item value="IMA"/>
 			<item value="finally"/>
 			<item value="newMethod"/>
@@ -20,11 +23,9 @@
 			<item value="getInstance"/>
 			<item value="toString"/>
 			<item value="getInstance()"/>
-			<item value="finnaly"/>
-			<item value="Thread()"/>
-			<item value="Thread"/>
 		</list>
 		<list key="replacehistory">
+			<item value="first"/>
 			<item value="strCh"/>
 			<item value=" "/>
 		</list>

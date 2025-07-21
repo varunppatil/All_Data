@@ -19,7 +19,7 @@ public class ArrayMulti {
 			for(int i=nos.length-1;i>=0;i--) {				
 				for(int j=nos[i].length-1;j>=0;j--) {
 					System.out.println(nos[i][j]);
-					System.out.println(nos.length);
+				//	System.out.println(nos.length);
 		}
 	}
 			System.out.println(nos.length);

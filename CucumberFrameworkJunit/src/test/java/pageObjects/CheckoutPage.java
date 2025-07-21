@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class CheckoutPage {
 	public WebDriver driver;
-	By cartBag = By.alt='CartcssSelector("[']");
+	By cartBag = By.cssSelector("[alt='Cart']");
 	By checkoutButton = By.xpath("//button[text()='PROCEED TO CHECKOUT']");
 	By promoBtn= By.cssSelector(".promoBtn");
 	By placeOrder = By.xpath("//button[text()='Place Order']");

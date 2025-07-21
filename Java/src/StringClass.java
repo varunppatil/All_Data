@@ -12,8 +12,7 @@ public class StringClass
 	
 		String nameSub = name.substring(name.indexOf('n')+1, name.indexOf('l')+1);
 		System.out.println(nameSub);
-		
-		
+
 		//	System.out.println(name.strip());
 		System.out.println(name.trim());
 		StringBuffer s=new StringBuffer(name);

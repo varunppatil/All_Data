@@ -1,5 +1,6 @@
 package sample;
 
+import java.time.Duration;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
@@ -25,7 +26,7 @@ public class FrameandWindow {
 		driver.findElement(By.xpath("(//a)[8]")).sendKeys("uE035");
 		//driver.get("https://amazon.com");
 		Actions action = new Actions(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 		By dismiss = By.xpath("//input[@data-action-type='DISMISS']");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(dismiss));

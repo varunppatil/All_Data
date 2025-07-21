@@ -4,7 +4,7 @@ public class Java20_ReverseNumber {
 
 	public static void main(String[] args) {
 		
-		int num =636, temp=num;
+		int num =1020, temp=num;
 		int num1=0;
 		while(temp>1) {			
 			num1= num1*10+temp%10;

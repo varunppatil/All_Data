@@ -2,6 +2,7 @@ package sample;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -39,7 +40,7 @@ public class JavascriptExecutorgetTextAndCHERCHER {
 	// For creating alert
 		js.executeScript("alert('hi')");
 		
-		WebDriverWait wait = new WebDriverWait(driver,3);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(3));
 		wait.until(ExpectedConditions.alertIsPresent());
 		
 		Alert ale= driver.switchTo().alert();

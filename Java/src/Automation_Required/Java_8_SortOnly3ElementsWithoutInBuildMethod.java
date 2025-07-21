@@ -29,6 +29,7 @@ public class Java_8_SortOnly3ElementsWithoutInBuildMethod {
 					var = arr[j];
 					arr[j] = arr[i];
 					arr[i] = var;
+					System.out.println(Arrays.toString(arr));
 				}
 			}
 		}
